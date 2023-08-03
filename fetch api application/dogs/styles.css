@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+  }
+  
+  .wrapper {
+    text-align: center;
+    max-width: 600px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .message {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .breed-select {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .show-image-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .show-image-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .dog-image-container {
+    max-height: 70vh;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  
+  .dog-image-container img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .refresh-message {
+    display: none;
+    font-size: 16px;
+    color: #333;
+  }
+  

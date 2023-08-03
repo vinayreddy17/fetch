@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poems by Author</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="tabs">
+        <p class="explanation">In this task, I have fetched the data (get request)from the API <b>https://poetrydb.org/author</b>.<br>Then, I displayed the first 10 names using the "slice" function as buttons.<br>When you click on a button, the content displayed in the divs will be erased and the div with the poems of the author will be shown as buttons.<br>Again, when you click the poem of your choice, the same thing happens, and the poem will be displayed.</p>
+        <div class="tab">
+            <div class="container mt-6">
+                <h1 class="text-center">Poems</h1>
+               
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col-md-6 offset-md-3">
+                        <h2>AUTHOR</h2>
+                        <div class="author-names-container">
+                            <!-- display of authors -->
+                        </div>
+                        <input type="text" id="authorNameInput" class="form-control mt-3" placeholder="Enter author name">
+                        <button id="getPoemsBtn" class="btn btn-primary btn-block mt-3">Get Poems</button>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-6 offset-md-3">
+                        <div id="poemsContainer">
+                            <!-- poem titles -->
+                            <p class="instruction">Select an author from the list above to view their poems.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Images Viewer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div id="explanation" class="explanation">
+            <p>This web application fetches dog breed names from the "https://dog.ceo/api/breeds/list" API and displays them in a dropdown menu. When the user selects a breed, a new page is loaded, and a random image of the selected breed is fetched from the "https://dog.ceo/api/breed/BREED_NAME/images/random" API. The image is displayed in the center of the window. The application uses JavaScript to handle the API fetch, DOM manipulation, and event handling for the dropdown and button. Styling is done using CSS, making the interface user-friendly and visually appealing.</p>
+       <br><br><br> </div>
+        <div id="message" class="message"><b>Please select a dog breed from the list below:</b></div>
+        <select id="breedSelect" class="breed-select">
+            <!-- Dog breed options will be added here -->
+        </select>
+        <button id="showImageButton" class="show-image-button">Show Image</button>
+        <div id="dogImageContainer" class="dog-image-container">
+            <!-- Dog image will be displayed here -->
+        </div>
+        <div id="refreshMessage" class="refresh-message">Refresh the page to get to home page.</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

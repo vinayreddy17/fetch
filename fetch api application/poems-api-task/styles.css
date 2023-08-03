@@ -1,0 +1,84 @@
+.explanation
+{   text-align: center;
+    margin: auto;
+    color: #eef2f7;
+    
+}
+h1
+{
+    color:#f00f0f
+}
+
+h2{
+    color: #007bff;
+}
+body {
+    background-color: #331433;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+  }
+  
+  .container {
+    margin-top: 50px;
+  }
+  
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .author-names-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .author-name {
+    cursor: pointer;
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+  }
+  
+  .author-name:hover {
+    background-color: #0056b3;
+  }
+  
+  .poem-title {
+    cursor: pointer;
+    margin: 5px;
+    padding: 8px 15px;
+    background-color: #6c757d;
+    color: #fff;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+  }
+  
+  .poem-title:hover {
+    background-color: #555e63;
+  }
+  
+  .instruction {
+    text-align: center;
+    margin-top: 10px;
+    color: #538c94;
+  }
+  
+  /* Additional styling for responsiveness */
+  @media (max-width: 768px) {
+    .author-names-container {
+      justify-content: flex-start;
+    }
+  
+    .col-md-6 {
+      max-width: 100%;
+    }
+  }
+  
